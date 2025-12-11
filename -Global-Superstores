@@ -1,0 +1,184 @@
+
+
+Introduction
+Objective of the Project
+The purpose of this project is to analyze the sales performance of the Global Superstores dataset across different regions, states, cities, product categories, and customer profiles. Additionally, the project aims to forecast future sales trends to assist in data-driven decision-making for operational and strategic planning.
+
+Problem Being Addressed
+The organization seeks to understand:
+
+Which regions and states contribute most to revenue
+Which cities perform best
+Who the top customers are
+Which product categories drive profit
+Sales progression over time
+Forecasted performance for the next two years
+This analysis addresses the broader challenge of optimizing business operations, inventory, and marketing strategy.
+
+Key Datasets & Methodologies
+Dataset includes:
+
+Order dates
+Region and state information
+City-level sales
+Customer names
+Product categories and sales
+Tools & methods used:
+
+Tableau for data visualization
+Time-series forecasting
+Sales aggregation
+line charts, pie charts, and bubble charts
+3. Story of Data
+Data Source
+The dataset is modeled after the well-known Global Superstore dataset used in analytics and BI training. It typically originates from internal sales systems such as ERP or POS solutions.
+
+Data Collection Process
+Data is collected from transactional order records stored in the company’s internal data warehouse. Each row represents a single sales transaction.
+
+Data Structure
+Rows: individual customer orders
+Columns: order date, region, product category, sub-category, city, state, customer name, and sales amount
+Important Features & Their Significance
+Feature Importance Order Date Enables time-series and forecasting analysis Region / State / City Geographic sales comparison Product Category Identifies revenue-driving segments Customer Name Customer performance analysis Sales Amount Primary measure of business output
+
+Data Limitations or Biases
+Potential seasonal biases (e.g., Q4 spikes)
+Possible inconsistencies in customer names (e.g., duplicates)
+No explicit cost/margin data, limiting profit analysis
+Forecast accuracy limited by available historical length
+4. Data Splitting & Preprocessing
+Data Cleaning
+Typical cleaning steps (performed prior to visualization):
+
+Removing duplicate transactions
+Ensuring consistent date formats
+Standardizing category names
+Removing negative/erroneous entries
+Handling Missing Values
+Some fields — like customer segment or city — may be incomplete. Approaches used:
+
+Imputation with known category values when possible
+Row removal if fields were critical but missing
+Data Transformations
+Aggregated sales by region, state, and city
+Extracted year and quarter from the date
+Grouped product categories
+Created forecasting model using Tableau’s built-in forecast engine
+Data Splitting
+Independent Variables: Region, City, Category, Customer, Quarter
+Dependent Variable: Sales
+Industry Context
+The dataset represents the retail industry, where revenue, customer behavior, and product performance analytics are central to business strategy.
+
+Stakeholders
+Retail managers
+Inventory & supply chain teams
+Marketing department
+Executive leadership
+Financial planners
+Value to the Industry
+Insights can help:
+
+Optimize inventory distribution
+Improve regional marketing
+Recognize top customers
+Adjust product category strategy
+
+Improve forecasting accuracy
+5. Pre-Analysis
+Identify Key Early Trends
+Initial dashboard review shows:
+
+Sales steadily increased from 2015 to 2018
+Eastern region drives the highest sales
+California and New York City show exceptional performance
+Technology category is the largest revenue contributor
+Potential Correlations
+Higher urban population → higher city sales
+Technology category correlates with increased overall sales
+Customers with repeated purchases generate most revenue
+Initial Insights
+Q4 spikes indicate seasonal demand
+Western and Eastern regions both show growth trends
+Customer sales concentration suggests top customers account for a large share
+6. In-Analysis
+Unconfirmed Insights (Hypotheses)
+California’s disproportionately high sales may be due to higher order density and larger average order value
+Technology product sales may drive seasonality in Q4
+Some customers consistently outperform others, suggesting loyalty
+Recommendations from Emerging Patterns
+Increase marketing spend in California and New York City
+Ensure stock levels are highest in Q3–Q4 for peak demand
+Consider loyalty programs for high-value customers
+Visualized in Tableau
+Pivot tables for regional/category breakdown
+VLOOKUP/XLOOKUP for customer merging
+FORECAST for projections
+Conditional formatting for trend detection
+7. Post-Analysis & Insights
+Key Findings
+Sales Growth: A strong upward trend from 2015–2018
+Regional Performance: East region leads, West follows
+State Performance: California dominates with over $446K in sales
+Top Cities: New York City is the highest contributor
+Customer Insights: A handful of customers generate the majority of revenue
+Category Performance: Technology leads ($827K+), followed by Furniture and Office Supplies
+Forecasting: Predicted continued growth through 2019–2020
+Comparison with Initial Findings
+Seasonal trends were confirmed
+Geographic sales distribution matched expectations (urban dominance)
+Some customers performed better than initially anticipated
+8. Data Visualizations & Charts
+Visualizations included in the dashboard:
+
+Sales Progression by Region (Line/Area Chart)
+Shows year-over-year growth across East, West, and other regions.
+Sales by State (Map Visualization)
+Highlights top states (California, Washington, Pennsylvania).
+Sales by City (Bubble Chart)
+Indicates New York City, Los Angeles, Seattle as top cities.
+Customer Performance Metrics (Tree Map)
+Displays highest-value customers.
+Category Sales Metric (Pie Chart)
+Technology is the leading category.
+Forecast (Line Chart with Shaded Confidence Interval)
+Predicts growth in next 2 years.
+Each visualization clarifies a different aspect of business performance, collectively supporting strategic decisions.
+
+9. Recommendations & Observations
+Actionable Insights
+Invest heavily in top-performing states, especially California & New York
+Scale inventory for Technology products
+Strengthen customer retention strategies for high-value customers
+Expand into growing regions showing upward trends
+Business Optimizations
+Improve supply chain speed for high-volume states
+Consider region-specific promotions
+Adjust product strategy based on category performance
+Unexpected Outcomes
+Some mid-sized cities outperform large metropolitan areas
+Certain customers show extreme purchasing patterns (heavy concentration)
+10. Conclusion
+Key Learnings
+The business is growing consistently year over year
+Sales are concentrated in specific states and cities
+Technology is the leading revenue generator
+Forecast predicts continued growth
+Limitations
+Dataset does not include profitability or cost data
+A limited number of years available for forecasting
+Customer segmentation could be expanded
+Future Research
+Add profit and cost fields for margin analysis
+Perform cohort analysis for customer lifetime value
+Explore cross-category sales behavior
+11. References & Appendices
+References
+Global Superstore Dataset (training dataset)
+Tableau (visualization platform)
+Internal sales analytics documentation
+
+https://docs.google.com/spreadsheets/d/1SSRfJSIhQ-F3FFBkU7XzRzQswCKse6sr/edit?usp=sharing&ouid=107416298814343808047&rtpof=true&sd=true
+
+
